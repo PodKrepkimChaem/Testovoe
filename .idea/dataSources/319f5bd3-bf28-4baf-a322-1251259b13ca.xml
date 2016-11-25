@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - BOOKMANAGER@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="BOOKMANAGER">
+      <visible>1</visible>
+    </schema>
+    <table id="2" parent="1" name="BOOKS"/>
+    <column id="3" parent="2" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>INT(10)|4</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="4" parent="2" name="BOOK_TITLE">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR(255)|12</data-type>
+    </column>
+    <column id="5" parent="2" name="BOOK_AUTHOR">
+      <mandatory>1</mandatory>
+      <data-type>VARCHAR(255)|12</data-type>
+    </column>
+    <column id="6" parent="2" name="BOOK_PRICE">
+      <mandatory>1</mandatory>
+      <data-type>INT(10)|4</data-type>
+    </column>
+    <key id="7" parent="2" name="PRIMARY">
+      <columns>ID</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

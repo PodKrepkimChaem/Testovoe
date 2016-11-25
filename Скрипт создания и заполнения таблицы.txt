@@ -1,0 +1,20 @@
+CREATE TABLE user(
+id int(8) NOT NULL auto_increment,
+name VARCHAR(25) NOT NULL,
+age int(11) NOT NULL,
+isAdmin tinyint(1) NOT NULL,
+createdDate DATETIME,
+PRIMARY KEY (`id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO test.user (name, age, isAdmin, createdDate) VALUES ('Asya', '11', false, '2008-02-01');
+INSERT INTO test.user (name, age, isAdmin, createdDate) VALUES ('Misha', '21', true, '1916-11-21 20:29:22.0');
+INSERT INTO test.user (name, age, isAdmin, createdDate) VALUES ('Olkya', '33', true, '1986-1-11 20:29:22.0');
+INSERT INTO test.user (name, age, isAdmin, createdDate) VALUES ('Petya', '44', true, '1988-12-28 20:29:22.0');
+INSERT INTO test.user (name, age, isAdmin, createdDate) VALUES ('Zosya', '55', true, '1988-3-27 20:29:22.0');
+INSERT INTO test.user (name, age, isAdmin, createdDate) VALUES ('Anrey', '23', true, '2016-4-26 20:29:22.0');
+INSERT INTO test.user (name, age, isAdmin, createdDate) VALUES ('Assss', '31', false, '1976-4-15 20:29:22.0');
+INSERT INTO test.user (name, age, isAdmin, createdDate) VALUES ('Xsssd', '31', false, '1976-3-13 20:29:22.0');
+INSERT INTO test.user (name, age, isAdmin, createdDate) VALUES ('Addss', '21', false, '2003-1-14 20:29:22.0');
+INSERT INTO test.user (name, age, isAdmin, createdDate) VALUES ('Xxsds', '21', false, '2003-1-22 20:29:22.0');
+INSERT INTO test.user (name, age, isAdmin, createdDate) VALUES ('Ooooo', '51', false, '2003-2-13 20:29:22.0');
